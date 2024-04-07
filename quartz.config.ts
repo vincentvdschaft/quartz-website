@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🐸 Vincent van de Schaft",
+    pageTitle: "🗃️ Vincent van de Schaft",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -35,16 +35,18 @@ const config: QuartzConfig = {
           dark: "#2b2b2b",
           secondary: "#284b63",
           tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          highlight: "rgba(255, 206, 71, 0.15)",
         },
         darkMode: {
-          light: "#161618",
+          light: "#000000",
           lightgray: "#393639",
-          gray: "#646464",
+          // Data, breadcrumbs, etc.
+          gray: "#FFDE04",
+          // Body text color
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          secondary: "#FFDE04",
+          tertiary: "#FFDE04",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
       },
