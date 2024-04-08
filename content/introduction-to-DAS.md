@@ -23,7 +23,7 @@ In the right image, you can see how the sound wave propagates from $E_0$ and is 
 1. Because there is a peak in the signal, we know that there must be a scatterer present.
 2. Because we know how fast a sound wave moves, we can also deduce from the time between transmission and reception **how far away** the scatterer is located.
 
-> [!NOTE]- 🧮 Calculation (click to expand)
+> [!info]- 🧮 Calculation (click to expand)
 > The signal is sent at $t=0$ and the reflection is received at $t_r=15\mu s$. The speed of sound in tissue $c$ is about $1540 m/s$. The total distance $d_{total}$ that the wave has traveled in that time is therefore
 > $$d_{total}=t_r\cdot c=15\cdot 10^{-6}\cdot 1540=23.1 cm$$
 > This is the distance of the round trip. So, the scatterer is halfway, which means that the distance between the scatterer and the sensor is $11.55cm$.
@@ -45,7 +45,7 @@ We now take two sensors instead of one. Again, element $E_0$ sends out a sound w
 (Actually, it's not a ring, but an ellipse. See the calculation block for an explanation.)
 
 
-> [!NOTE]- 🧮 Calculation (click to expand)
+> [!info]- 🧮 Calculation (click to expand)
 > For $E_0$, we can calculate the distance as before: the time at which we receive the peak with sensor $E_0$, $\tau_0$, is the time from $E_0$ to $S_0$ and back. The total distance between $E_0$ and $S_0$ is therefore $$d_{round}=c\cdot \tau_0$$
 The round trip is of equal length, so all possible locations for the scatterer are those for which the distance to $E_0$ is equal to $\frac{1}{2}\cdot c \cdot \tau_0$.
 >
@@ -68,7 +68,7 @@ To solve this problem, we use *Delay-And-Sum beamforming*. In this technique, we
 We now choose a focus point $P$. We want to know how strong the reflections are from point $P$. We can **focus** on point $P$ by looking at each sensor in the received signal for the moment when the reflections from $P$ arrive precisely at that sensor. (This is the *delay* part.) This way, we find for each sensor $E_i$ a value that tells us how strong the reflections from its ellipse are through $P$. If we add up these values, we get an estimate of how strong the reflection from point $P$ is. (This is the *sum* part.)
 
 
-> [!NOTE]- 🧮 Calculation (click to expand)
+> [!info]- 🧮 Calculation (click to expand)
 > If we have chosen a focus point $P$, we can find the corresponding delays and thus the locations in the received signals as follows.
 > For each element $E_i$, we can calculate the total distance that the wave had to travel from $E_2$ (the sender) to $P$ and then to $E_i$. The total distance consists of a distance forward $d_{forward}$ and a distance back $d_{back}$. The delay $\tau_i$ that belongs to this is
 > $$\tau_i=\frac{d_{to}+d_{back}}{c}$$
@@ -90,7 +90,7 @@ Although the quality of the image leaves a lot to be desired, it is clear that t
 
 
 
-> [!NOTE] Sidenote
+> [!info]- Sidenote
 > Some may notice that the world is not 2-dimensional but 3-dimensional. This means that all points equidistant from a sensor form not a circle but a spherical surface. Does this still work? Well no! Sensor elements that lie on a line can distinguish between all locations in a plane in 2D, but not in 3D. To suppress reflections from outside the image plane, ultrasound probes in practice have a grid of elements instead of a line. These same beamforming techniques are used to focus on the desired plane and suppress signals from outside that plane.
 
 ## Interesting links
