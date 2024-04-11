@@ -76,3 +76,9 @@ I_D(t)\\Q_D(t)
 I(t-\tau)\\Q(t-\tau)
 \end{bmatrix}
 $$
+
+> [!warning] Note
+> When doing [[time of flight correction]] for Delay-and-Sum beamforming, we usually compute a time of flight delay $\tau_f$ to index the IQ-data. In this indexing operation we effectively apply a **negative delay**. This means that the phase rotation factor in practice is a positive phasor instead of the negative one we saw before.
+> $$
+> I(t+\tau_f)+i\cdot Q(t+\tau))\cdot e^{i\omega \tau_f}
+> $$
