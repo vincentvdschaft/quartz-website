@@ -16,7 +16,7 @@ The reflections from the scatterers are captured by the elements of the transduc
 
 To understand the beamforming process, let's first look at a highly simplified scenario: we have a transducer with only 1 sensor element $E_0$ and we scan an image with only 1 scatterer $S_0$ in it.
 
-![[scene-0-just-one-en-dark.gif]]
+![[content/assets/scene-0-just-one-en-dark.gif]]
 
 In the right image, you can see how the sound wave propagates from $E_0$ and is scattered by $S_0$. In the left graph, you can see the sound signal received by $E_0$. Two things can be inferred from the incoming signal:
 
@@ -31,11 +31,11 @@ In the right image, you can see how the sound wave propagates from $E_0$ and is 
 
 But we are not only interested in **how far away** the scatterer is. We want to know **where** it is. Unfortunately, we will never find out in this way. We can see this in this alternative scenario: if $S_0$ is located elsewhere but is still the same distance away from the sensor, we measure exactly the same signal! Again, the peak is exactly at $15\mu s$.
 
-![[scene-1-rotated-en-dark.gif]]
+![[content/assets/scene-1-rotated-en-dark.gif]]
 
 This means that the reflections of all scatterers that lie on a circle arrive simultaneously at $E_0$. So, we cannot distinguish between the different scatterers. Here, you can also see that the measured peak is now much higher. The reflections of all scatterers add up here. (We'll come back to that later.)
 
-![[scene-2-circle-en-dark.gif]]
+![[content/assets/scene-2-circle-en-dark.gif]]
 
 To enable us to determine **where** the scatterer is located, we need more information. We can get that information by adding extra sensors at other locations.
 
@@ -53,13 +53,13 @@ The round trip is of equal length, so all possible locations for the scatterer a
 > The possible locations for the scatterer are therefore the locations for which this equation holds. If you solve this, you will find that the scatterer must be somewhere on an ellipse around $E_0$ and $E_1$.
 
 
-![[scene-3-multiple-sensors-en-dark.gif]]
+![[content/assets/scene-3-multiple-sensors-en-dark.gif]]
 
 ## Delay-And-Sum Beamforming
 
 We have now seen that with one sensor, we can determine how far away a scatterer is located and with two or more sensors, we can see where a scatterer is located. The problem is that in practice, we cannot assume that there is only one scatterer. That is literally never the case. In practice, there are many scatterers that are all "talking" at the same time. Let's look at an example that is a little closer to reality: we take $9$ scatterers at random locations and more than two sensors:
 
-![[scene-5-many-sensors-scatterers-en-dark.gif]]
+![[content/assets/scene-5-many-sensors-scatterers-en-dark.gif]]
 
 The signals now look much more chaotic, and without the right image, it is no longer clear which peak belongs to which scatterer. This means that we can no longer determine where the scatterers are located so easily.
 
@@ -77,7 +77,7 @@ We now choose a focus point $P$. We want to know how strong the reflections are 
 
 The image below shows what happens when you look at different locations $P$ in this way and add up all the signals. The dashed lines in the left graphs show which part of the received signal is used to focus on $P$. The bar on the right shows how high the total response is. The contribution of the different sensors to the height of the bar is always separated by a line. To make it clearer which sensor receives a strong signal, the ellipse and a line to the corresponding element appear when the signal received by that element becomes stronger. In the background, you can see the image formed when you let $P$ move over all possible locations and assign the pixel a brightness based on the total response at that location.
 
-![[scene-6-focussing-en-dark.gif]]
+![[content/assets/scene-6-focussing-en-dark.gif]]
 
 In this figure, we can see several things:
 
