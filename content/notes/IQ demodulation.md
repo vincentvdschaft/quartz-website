@@ -25,4 +25,4 @@ The most common wat to perform I/Q demodulation on sampled data with carrier fre
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vincentvdschaft/quartz-website/blob/v4/figure-generation/demodulation.ipynb)
 
-![[demodulation.png]]
+![[demodulation.png|500]]
