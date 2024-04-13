@@ -1,7 +1,6 @@
 ---
 title: Index
 ---
-
 ## Posts
 [[introduction-to-DAS]]
 
