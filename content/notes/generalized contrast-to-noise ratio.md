@@ -28,6 +28,6 @@ If we look at the probability density functions for the two regions after applyi
 ![[gcnr-scurve-overlap.png]]
 
 The code used to generate these plots is available via this link:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vincentvdschaft/quartz-website/blob/v4/figure-generation/gcnr-cnr-comparison.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vincentvdschaft/quartz-website/blob/v4/figure-generation/gcnr.ipynb)
 
 [1] A. Rodriguez-Molares _et al._, “The Generalized Contrast-to-Noise Ratio: A Formal Definition for Lesion Detectability,” _IEEE Trans. Ultrason., Ferroelect., Freq. Contr._, vol. 67, no. 4, pp. 745–759, Apr. 2020, doi: [10.1109/TUFFC.2019.2956855](https://doi.org/10.1109/TUFFC.2019.2956855).
