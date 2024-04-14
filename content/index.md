@@ -7,3 +7,4 @@ title: Index
 ## Notes
 [[IQ demodulation]]
 [[phase rotation]]
+[[generalized contrast-to-noise ratio]]
