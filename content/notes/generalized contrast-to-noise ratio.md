@@ -3,9 +3,9 @@ title: The generalized contrast-to-noise ratio
 aliases:
   - gCNR
 ---
-The generalized contrast-to-noise ratio (gCNR) [1] is measure of contrast between two regions in an image that cannot be artificially improved by dynamic range transformations.
+The generalized contrast-to-noise ratio (gCNR) [1] is a measure of contrast between two regions in an image that cannot be artificially improved by dynamic range transformations.
 
-It is computed from the probability density function of pixel intensities in two regions $A$, and $B$ as 
+It is computed from the probability density function of pixel intensities in two regions $A$, and $B$ as
 $$
 \text{gCNR} = 1-\int_{-\infty}^{\infty} \min(p_A(x), p_B(x)) dx,
 $$

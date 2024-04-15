@@ -17,7 +17,7 @@ $$
 > Note the sign difference between the two!
 
 ## Performing I/Q demodulation
-The most common wat to perform I/Q demodulation on sampled data with carrier frequency $\omega_c=2\pi f_c$ is as follows:
+The most common way to perform I/Q demodulation on sampled data with carrier frequency $\omega_c=2\pi f_c$ is as follows:
 1. Compute the analytic signal using the Hilbert transform. The analytic signal is just the signal without the negative frequency components. This means that the analytic signal is complex-valued.
 2. Shift the one-sided spectrum to baseband by multiplying with a signal $e^{-i2\pi f_c t}$.
 3. Low-pass filter to remove noise from outside the bandwidth of the signal.
