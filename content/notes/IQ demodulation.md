@@ -26,4 +26,4 @@ The most common way to perform I/Q demodulation on sampled data with carrier fre
 The figure below shows the different stages of the process. The code used to generate this image can be viewed in Google Colab:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vincentvdschaft/quartz-website/blob/v4/figure-generation/demodulation.ipynb)
 
-![[demodulation.png|700]]
+![[demodulation.png]]
