@@ -34,3 +34,5 @@ $$
 \tau_{0, el} = \frac{\vec{v}\cdot \vec{p}_{el}}{c}\tag{3}
 $$
 We can add any constant value to definitions in (1), (2), and (3) without affecting the wavefront shape as it is just the relative transmit times that are important.
+
+![[transmit_wavefronts.gif]]
