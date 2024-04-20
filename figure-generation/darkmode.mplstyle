@@ -113,7 +113,7 @@
 ## ***************************************************************************
 ## See https://matplotlib.org/stable/api/artist_api.html#module-matplotlib.lines
 ## for more information on line properties.
-#lines.linewidth: 1.5               # line width in points
+lines.linewidth: 0.75               # line width in points
 #lines.linestyle: -                 # solid line
 #lines.color:     C0                # has no affect on plot(); see axes.prop_cycle
 #lines.marker:          None        # the default marker
@@ -411,7 +411,7 @@ axes.labelcolor:    "#BBBBBB"
 
 #axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
                            # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-axes.prop_cycle: cycler('color', ['E02222', '0EA7FF', 'FFE70E', '67D627', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+axes.prop_cycle: cycler('color', ['ca1c1c', '00BBBB', 'e6d00b', '5ac120', '8153aa', '7e483d', 'cc60ab', '726767', 'a9aa1c', '13abba'])
                   # color cycle for plot lines as list of string color specs:
                   # single letter, long name, or web-style hex
                   # As opposed to all other parameters in this file, the color
@@ -561,7 +561,7 @@ legend.fancybox:      False     # if True, use a rounded box for the
 #figure.labelsize:   large     # size of the figure label (``Figure.sup[x|y]label()``)
 #figure.labelweight: normal    # weight of the figure label
 #figure.figsize:     6.4, 4.8  # figure size in inches
-figure.dpi:         200       # figure dots per inch
+figure.dpi:         150       # figure dots per inch
 figure.facecolor:   black     # figure face color
 #figure.edgecolor:   white     # figure edge color
 #figure.frameon:     True      # enable figure frame
