@@ -4,15 +4,14 @@ title: Transmit wavefront shape
 The shape of the wavefront that is transmitted is determined by the order in which the elements fire.
 
 The image below shows the individual wavefronts emitted by the white elements for the three common transmit types: Focused wave, diverging wave, and plane wave.
-- If we fire with delays such that all wavefronts pass through a focal point in front of the array at the same time we get a focused transmit wavefront. 
+- If we fire with delays such that all wavefronts pass through a focal point in front of the array at the same time we get a focused transmit wavefront.
 - If we imagine a wavefront emanating from a virtual source point behind the array and fire each element when this virtual wavefront hits it we get a diverging wavefront.
 - If we fire all elements with a constant delay between neighbors we get a planar wavefront.
 
 ![[transmit_wavefronts.png]]
 
 
-> [!info] Download
-> Check out this interactive notebook on to play around with these transmit schemes. I recommend you download the notebook as the interactive elements do not work correctly in Colab. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vincentvdschaft/quartz-website/blob/v4/figure-generation/transmit_waveforms.ipynb)
+You can play around with these plots in this interactive notebook: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vincentvdschaft/quartz-website/blob/v4/figure-generation/transmit_waveforms.ipynb)
 
 ## Computing the transmit delays
 To find the correct transmit delay $\tau_{0, el}$ for every element for every wavefront type we can imagine the desired wavefront already being there and coming in from behind the array. The elements will then fire when this imagined wavefront hits them.
@@ -33,6 +32,7 @@ For a plane wave transmit we can imagine a straight wavefront coming in, moving 
 $$
 \tau_{0, el} = \frac{\vec{v}\cdot \vec{p}_{el}}{c}\tag{3}
 $$
-We can add any constant value to definitions in (1), (2), and (3) without affecting the wavefront shape as it is just the relative transmit times that are important.
+We can add any constant time offset to the definitions in (1), (2), and (3) without affecting the wavefront shape as it is just the relative transmit times that are important.
 
+The figure below shows an animation of how the wavefronts for the three transmit types are constructed from the individual element wavefronts. The virtual wavefront is shows as a gray dashed line. The virtual source/focal point is shown as a yellow dot or line.
 ![[transmit_wavefronts.gif]]
