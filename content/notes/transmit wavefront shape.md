@@ -35,4 +35,20 @@ $$
 We can add any constant time offset to the definitions in (1), (2), and (3) without affecting the wavefront shape as it is just the relative transmit times that are important.
 
 The figure below shows an animation of how the wavefronts for the three transmit types are constructed from the individual element wavefronts. The virtual wavefront is shows as a gray dashed line. The virtual source/focal point is shown as a yellow dot or line.
-![[transmit_wavefronts.webp]]
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Video Example</title>
+</head>
+<body>
+    <video autoplay loop muted playsinline >
+        <source src="../assets/transmit-wavefronts.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

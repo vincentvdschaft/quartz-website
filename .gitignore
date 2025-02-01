@@ -12,3 +12,4 @@ replit.nix
 .devcontainer/
 .vscode/
 figure-generation/stylesheet.mplstyle
+!*.mp4
